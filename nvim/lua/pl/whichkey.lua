@@ -1,0 +1,30 @@
+return {}
+-- return {
+-- 	"folke/which-key.nvim",
+-- 	event = "VeryLazy",
+-- 	opts = {
+-- 		-- your configuration comes here
+-- 		-- or leave it empty to use the default settings
+-- 		-- refer to the configuration section below
+-- 		preset = "helix",
+-- 		icons = {
+-- 			breadcrumb = "", -- symbol used in the command line area that shows your active key combo
+-- 			separator = "",
+-- 			keys = {},
+-- 		},
+-- 		win = {
+-- 			border = "single", -- Borda reta (pode ser 'single', 'double', 'shadow', etc.)
+-- 			-- Você pode usar 'none' para remover as bordas completamente
+-- 			-- ou 'rounded' para bordas curvas
+-- 		}
+-- 	},
+-- 	keys = {
+-- 		{
+-- 			"<leader>?",
+-- 			function()
+-- 				require("which-key").show({ global = false })
+-- 			end,
+-- 			desc = "Buffer Local Keymaps (which-key)",
+-- 		},
+-- 	},
+-- }
