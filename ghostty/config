@@ -1,0 +1,23 @@
+ #font-family = Victor Mono 
+ #font-style = Italic
+# font-family = ZedMono Nerd Font Mono
+font-family = Monaspace Neon Light 
+
+font-size = 22
+# font-feature = -calt, -liga, -dlig
+font-feature =  calt, liga, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09
+
+background = #181818
+#background = #000000
+#background-opacity = 0.96
+#background-blur-radius = 40
+#alpha-blending = linear-corrected
+
+mouse-hide-while-typing = true
+
+#keybind = global:cmd+;=toggle_quick_terminal
+
+#background-image = /Users/o/Pictures/wallpaper/anime_13.png
+#background-image-opacity = 0.5    # Define a opacidade (0.0 a 1.0)
+#background-image-align = center   # Alinhamento: center, top, bottom, left, right, etc.
+#background-image-fit = fill       # Modo: fill, fit, stretch, tile
