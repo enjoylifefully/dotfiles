@@ -13,9 +13,26 @@
         }
     },
     {
+        // "context": "(!(vim_mode==insert && vim_operator==none))",
+        "bindings": {
+            "cmd-e": "project_panel::ToggleFocus",
+            "cmd-j": "terminal_panel::ToggleFocus",
+            "cmd-b": "outline_panel::ToggleFocus",
+            "cmd-g": "git_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "cmd-t": "workspace::NewTerminal",
+            "cmd-l": "pane::ActivateNextItem"
+        }
+    },
+    {
         "context": "Editor",
         "bindings": {
-            // "j k": ["workspace::SendKeystrokes", "escape"]
+            "shift-enter": ["workspace::SendKeystrokes", "escape"],
+            "shift-space": "editor::ShowCompletions"
         }
     }
 ]

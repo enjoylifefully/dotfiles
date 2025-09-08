@@ -1,8 +1,8 @@
  #font-family = Victor Mono 
  #font-style = Italic
-# font-family = ZedMono Nerd Font Mono
+font-family = ZedMono Nerd Font Mono
 # font-family = Monaspace Neon Light 
-font-family = JetBrains Mono
+font-family = JetBrainsMono
 
 font-size = 22
 # font-feature = -calt, -liga, -dlig
@@ -10,10 +10,10 @@ font-feature =  calt, liga, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09
 
 #background = #181818
 background = #000000
-#background-opacity = 0.96
-#background-blur-radius = 40
-#alpha-blending = linear-corrected
-
+background-opacity = 0.90
+background-blur-radius = 50
+alpha-blending = linear-corrected
+#
 mouse-hide-while-typing = true
 
 #keybind = global:cmd+;=toggle_quick_terminal
