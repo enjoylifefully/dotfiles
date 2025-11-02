@@ -7,157 +7,286 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-    // "experimental.theme_overrides": {
-    //     "background": "#000000",
-    //     "tab.active_background": "#000000",
-    //     "terminal.background": "#000000",
-    //     "panel.background": "#000000",
-    //     "editor.background": "#000000"
-    // },
-    "hard_tabs": false,
-    "tab_size": 4,
-    "buffer_font_family": "JetBrains Mono NL",
-    "ui_font_size": 20,
-    "buffer_font_size": 24,
-    "theme": {
-        "mode": "system",
-        "light": "One Light",
-        "dark": "Github Dark High Contrast"
-    },
-    "show_edit_predictions": false,
-    "features": {
-        "edit_prediction_provider": "none"
-    },
-    "diagnostics": {
-        "button": true,
-        "inline": {
-            "enabled": true,
-            "padding": 10
-        }
-    },
-    // region: vim
-    "vim_mode": true,
-    "vim": {
-        "use_system_clipboard": "on_yank"
-    },
-    // endregion: vim
-    // region: editor
-    "ensure_final_newline_on_save": true,
-    "indent_guides": {
-        "enabled": false,
-        "line_width": 1,
-        "active_line_width": 2
-    },
-    "gutter": {
-        "breakpoints": false,
-        "folds": false,
-        "line_numbers": false,
-        "runnables": false,
-        "min_line_number_digits": 2
-    },
-    "scrollbar": {
-        "show": "always",
-        "git_diff": false
-    },
-    "buffer_line_height": "standard",
-    "preferred_line_length": 100,
-    "show_wrap_guides": true,
-    "soft_wrap": "none",
-    // endregion: editor
-    // region: bar
-    "tabs": {
-        "file_icons": true,
-        "show_diagnostics": "all",
-        "git_status": true
-    },
-    "status_bar": {
-        "active_language_button": true
-    },
-    "tab_bar": {
-        "show": true,
-        "show_nav_history_buttons": false,
-        "show_tab_bar_buttons": false
-    },
-    "title_bar": {
-        "show_user_picture": false
-    },
-    "toolbar": {
-        "agent_review": false,
-        "quick_actions": false,
-        "breadcrumbs": false
-    },
-    // region: bar
-    // region: panel
-    "global_lsp_settings": {
-        "button": true
-    },
-    "search": {
-        "button": false
-    },
-    "terminal": {
-        "button": false,
-        "default_width": 640,
-        "line_height": "standard",
-        "copy_on_select": true,
-        "dock": "right",
-        "font_size": 18
-    },
-    "chat_panel": {
-        "button": "when_in_call"
-    },
-    "collaboration_panel": {
-        "button": false
-    },
-    "notification_panel": {
-        "button": false
-    },
-    "agent": {
-        "button": false
-    },
-    "debugger": {
-        "button": false
-    },
-    "git_panel": {
-        "button": false,
-        "default_width": 400,
-        "dock": "right"
-    },
-    "outline_panel": {
-        "button": false,
-        "default_width": 400,
-        "dock": "right"
-    },
-    "project_panel": {
-        "indent_size": 30,
-        "scrollbar": {
-            "show": "always"
-        },
-        "hide_root": true,
-        "button": false,
-        "default_width": 400,
-        "hide_gitignore": false,
-        "entry_spacing": "standard",
-        "auto_fold_dirs": false,
-        "dock": "right",
-        "indent_guides": {
-            "show": "never"
-        }
-    },
-    // endregion: panel
-    // region: language
-    "format_on_save": "language_server",
-    "languages": {
-        "SQL": {
-            "formatter": {
-                "external": {
-                    "command": "pg_format"
-                }
-            }
-        }
-    },
-    // endregion: language
-    "telemetry": {
-        "metrics": false,
-        "diagnostics": false
+  // "experimental.theme_overrides": {
+  //     "background": "#000000",
+  //     "tab.active_background": "#000000",
+  //     "terminal.background": "#000000",
+  //     "panel.background": "#000000",
+  //     "editor.background": "#000000"
+  // },
+  "use_system_prompts": false,
+  "hard_tabs": false,
+
+  "tab_size": 4,
+
+  "buffer_font_family": ".ZedMono",
+
+  "ui_font_size": 20,
+
+  "buffer_font_size": 24,
+
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Gruvbox Dark Hard"
+  },
+
+  "show_edit_predictions": false,
+
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+
+  "diagnostics": {
+    "button": true,
+    "inline": {
+      "enabled": true,
+      "padding": 10
     }
+  },
+
+  // region: vim
+
+  "vim_mode": true,
+
+  "vim": {
+    "use_system_clipboard": "on_yank"
+  },
+
+  // endregion: vim
+
+  // region: editor
+
+  "ensure_final_newline_on_save": true,
+
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 1,
+    "active_line_width": 2
+  },
+
+  "gutter": {
+    "breakpoints": false,
+    "folds": false,
+    "line_numbers": false,
+    "runnables": false,
+    "min_line_number_digits": 2
+  },
+
+  "scrollbar": {
+    "show": "never",
+    "git_diff": false
+  },
+
+  "buffer_line_height": "standard",
+
+  "preferred_line_length": 100,
+
+  "show_wrap_guides": true,
+
+  "soft_wrap": "none",
+
+  // endregion: editor
+
+  // region: bar
+
+  "tabs": {
+    "file_icons": true,
+    "show_diagnostics": "all",
+    "git_status": true
+  },
+
+  "status_bar": {
+    "active_language_button": true
+  },
+
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+
+  "title_bar": {
+    "show_user_picture": false
+  },
+
+  "auto_update": true,
+
+  "toolbar": {
+    "agent_review": false,
+    "quick_actions": false,
+    "breadcrumbs": false
+  },
+
+  // region: bar
+
+  // region: panel
+
+  "global_lsp_settings": {
+    "button": true
+  },
+
+  "search": {
+    "button": false
+  },
+
+  "terminal": {
+    "button": false,
+    "default_width": 640,
+    "line_height": "standard",
+    "copy_on_select": true,
+    "dock": "bottom",
+    "font_size": 18
+  },
+
+  "collaboration_panel": {
+    "dock": "right",
+    "button": false
+  },
+
+  "notification_panel": {
+    "button": false
+  },
+
+  "agent": {
+    "button": false
+  },
+
+  "debugger": {
+    "button": false
+  },
+
+  "git_panel": {
+    "button": false,
+    "default_width": 400,
+    "dock": "right"
+  },
+
+  "outline_panel": {
+    "button": false,
+    "default_width": 400,
+    "dock": "right"
+  },
+
+  "project_panel": {
+    "button": false,
+    "indent_size": 30,
+    "scrollbar": {
+      "show": "always"
+    },
+    "hide_root": true,
+    "default_width": 400,
+    "hide_gitignore": false,
+    "entry_spacing": "standard",
+    "auto_fold_dirs": false,
+    "dock": "right",
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+
+  // endregion: panel
+
+  // region: languages
+
+  "format_on_save": "on",
+
+  "languages": {
+    "HTML": {
+      "tab_size": 2
+    },
+
+    "CSS": {
+      "tab_size": 2
+    },
+
+    "JavaScript": {
+      "tab_size": 2
+    },
+
+    "TypeScript": {
+      "tab_size": 2
+    },
+
+    "TSX": {
+      "tab_size": 2
+    },
+
+    "JSONC": {
+      "format_on_save": "on",
+      "formatter": "prettier",
+      "tab_size": 2
+    },
+
+    "JSON": {
+      "format_on_save": "on",
+      "formatter": "prettier",
+      "tab_size": 2
+    },
+
+    "SQL": {
+      "formatter": {
+        "external": {
+          "command": "pg_format"
+        }
+      }
+    },
+
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": "prettier"
+    },
+
+    "Luau": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"]
+        }
+      }
+    }
+  },
+
+  "lsp": {
+    "luau-lsp": {
+      "settings": {
+        "roblox": {
+          "enabled": true,
+          "download_api_documentation": true,
+          "download_definitions": true
+        },
+        "luau-lsp": {
+          "completion": {
+            "imports": {
+              "enabled": true,
+              "suggestRequires": true,
+              "suggestServices": true,
+              "requireStyle": "AlwaysRelative"
+            }
+          }
+        }
+      }
+    },
+
+    "json-language-server": {
+      "settings": {
+        "json": {
+          "schemas": [
+            {
+              "fileMatch": ["*.project.json"],
+              "url": "https://raw.githubusercontent.com/rojo-rbx/vscode-rojo/refs/heads/master/schemas/project.template.schema.json"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  // endregion: languages
+
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  }
 }

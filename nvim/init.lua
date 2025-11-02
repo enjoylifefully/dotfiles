@@ -1,4 +1,5 @@
-require "cfg.remap"
-require "cfg.lazy"
-require "cfg"
---require"cfg.eolnum".setup()
+require("core")
+
+vim.lsp.enable({"clangd"                     ,"rust-analyzer",
+"lua-language-server"        ,"typescript-language-server"
+})
