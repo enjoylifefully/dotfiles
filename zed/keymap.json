@@ -19,7 +19,8 @@
       "cmd-j": "terminal_panel::ToggleFocus",
       "cmd-b": "outline_panel::ToggleFocus",
       "cmd-g": "git_panel::ToggleFocus",
-      "cmd-r": "workspace::ToggleBottomDock"
+      // "cmd-r": "workspace::ToggleBottomDock"
+      "cmd-r": "workspace::ToggleRightDock"
     }
   },
   {
@@ -32,8 +33,18 @@
   {
     "context": "Editor",
     "bindings": {
-      "shift-enter": ["workspace::SendKeystrokes", "escape"],
+      // "shift-enter": ["workspace::SendKeystrokes", "escape"],
       "shift-space": "editor::ShowCompletions"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-<": "zed::OpenSettings"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-,": "zed::OpenSettingsFile"
     }
   }
 ]

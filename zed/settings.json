@@ -14,6 +14,12 @@
   //     "panel.background": "#000000",
   //     "editor.background": "#000000"
   // },
+  "lsp_document_colors": "none",
+  "agent_servers": {
+    "codex": {
+      "default_model": "gpt-5.1-codex-max/xhigh"
+    }
+  },
   "use_system_prompts": false,
   "hard_tabs": false,
 
@@ -23,12 +29,16 @@
 
   "ui_font_size": 20,
 
-  "buffer_font_size": 24,
+  "buffer_font_size": 20,
+
+  "agent_ui_font_size": 20,
+
+  "agent_buffer_font_size": 20,
 
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Ayu Dark"
   },
 
   "show_edit_predictions": false,
@@ -91,6 +101,7 @@
   // region: bar
 
   "tabs": {
+    "activate_on_close": "history",
     "file_icons": true,
     "show_diagnostics": "all",
     "git_status": true
@@ -135,8 +146,8 @@
     "default_width": 640,
     "line_height": "standard",
     "copy_on_select": true,
-    "dock": "bottom",
-    "font_size": 18
+    "dock": "right"
+    // "font_size": 18
   },
 
   "collaboration_panel": {
@@ -149,6 +160,10 @@
   },
 
   "agent": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-5"
+    },
     "button": false
   },
 
@@ -192,6 +207,14 @@
   "format_on_save": "on",
 
   "languages": {
+    "Python": {
+      "language_servers": ["pyrefly", "ruff", "!pyright", "!pylsp"]
+    },
+
+    "YAML": {
+      "tab_size": 2
+    },
+
     "HTML": {
       "tab_size": 2
     },
@@ -205,7 +228,8 @@
     },
 
     "TypeScript": {
-      "tab_size": 2
+      "formatter": "prettier",
+      "tab_size": 4
     },
 
     "TSX": {
@@ -245,6 +269,10 @@
           "arguments": ["-"]
         }
       }
+    },
+
+    "C": {
+      "enable_language_server": false
     }
   },
 
@@ -277,6 +305,22 @@
               "fileMatch": ["*.project.json"],
               "url": "https://raw.githubusercontent.com/rojo-rbx/vscode-rojo/refs/heads/master/schemas/project.template.schema.json"
             }
+          ]
+        }
+      }
+    },
+
+    "tailwindcss-language-server": {
+      "settings": {
+        "classFunctions": ["tw", "Style"],
+        "experimental": {
+          "classRegex": [
+            ["className:\\s*\"([^\"]*)\""],
+            ["className:\\s*'([^']*)'"],
+            ["className =\\s*'([^']*)'"]
+            //     ["Classes \\=([^;]*);", "'([^']*)'"],
+            //     ["Classes \\=([^;]*);", "\"([^\"]*)\""],
+            //     ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"]
           ]
         }
       }
