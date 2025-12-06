@@ -1,5 +1,5 @@
-*
+/*
 
-!.gitignore
-!themes/**
-!*.json
+!/.gitignore
+!/themes/
+!/*.json

@@ -1,11 +1,11 @@
-*
+/*
 
-!.gitignore
-!aerospace/**
-!clangd/**
-!gh/**
-!ghostty/**
-!kitty/**
-!nvim/**
-!raycast/**
-!zed/**
+!/.gitignore
+!/aerospace/
+!/clangd/
+!/gh/
+!/ghostty/
+!/kitty/
+!/nvim/
+!/raycast/
+!/zed/
