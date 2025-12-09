@@ -9,8 +9,8 @@ vim.keymap.set("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<CR>")
 vim.keymap.set("i", "<S-CR>", "<Esc>")
 
 -- leap
-vim.keymap.set({ 'n', 'x', 'o' }, 's', '<Plug>(leap)')
-vim.keymap.set('n', 'S', '<Plug>(leap-from-window)')
+vim.keymap.set({ "n", "x", "o" }, "s", "<Plug>(leap)")
+vim.keymap.set("n", "S", "<Plug>(leap-from-window)")
 
 vim.keymap.set("n", "<leader>o", function()
 	local command = vim.fn.input("%")

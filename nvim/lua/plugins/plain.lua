@@ -1,3 +1,3 @@
 return {
-	'andreypopp/vim-colors-plain'
+	"andreypopp/vim-colors-plain",
 }

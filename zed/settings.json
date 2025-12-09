@@ -14,13 +14,18 @@
   //     "panel.background": "#000000",
   //     "editor.background": "#000000"
   // },
+
   "lsp_document_colors": "none",
+
   "agent_servers": {
     "codex": {
+      "default_mode": "full-access",
       "default_model": "gpt-5.1-codex-max/xhigh"
     }
   },
+
   "use_system_prompts": false,
+
   "hard_tabs": false,
 
   "tab_size": 4,
@@ -261,6 +266,15 @@
       "formatter": "prettier"
     },
 
+    "Lua": {
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"]
+        }
+      }
+    },
+
     "Luau": {
       "format_on_save": "on",
       "formatter": {
@@ -292,6 +306,20 @@
               "suggestServices": true,
               "requireStyle": "AlwaysRelative"
             }
+          }
+        }
+      }
+    },
+
+    "lua-language-server": {
+      "settings": {
+        "Lua": {
+          "diagnostics": {
+            "globals": ["vim"]
+          },
+          "workspace": {
+            "library": ["/opt/homebrew/share/nvim/runtime/lua"],
+            "checkThirdParty": false
           }
         }
       }
