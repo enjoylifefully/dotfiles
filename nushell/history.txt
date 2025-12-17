@@ -128,3 +128,7 @@ ls
 gitls
 ls
 zed .gitignore
+git add .
+git commit -m "apenas atualizando"
+git push
+ls
