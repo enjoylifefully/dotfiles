@@ -20,8 +20,8 @@
   "agent_servers": {
     "codex": {
       "default_mode": "full-access",
-      "default_model": "gpt-5.1-codex-max/xhigh"
-    }
+      "default_model": "gpt-5.1-codex-max/xhigh",
+    },
   },
 
   "use_system_prompts": false,
@@ -30,7 +30,7 @@
 
   "tab_size": 4,
 
-  "buffer_font_family": ".ZedMono",
+  "buffer_font_family": "Lilex",
 
   "ui_font_size": 20,
 
@@ -43,21 +43,21 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
+    "dark": "Ayu Dark",
   },
 
   "show_edit_predictions": false,
 
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "none",
   },
 
   "diagnostics": {
     "button": true,
     "inline": {
       "enabled": true,
-      "padding": 10
-    }
+      "padding": 10,
+    },
   },
 
   // region: vim
@@ -65,7 +65,7 @@
   "vim_mode": true,
 
   "vim": {
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "on_yank",
   },
 
   // endregion: vim
@@ -77,7 +77,7 @@
   "indent_guides": {
     "enabled": true,
     "line_width": 1,
-    "active_line_width": 2
+    "active_line_width": 2,
   },
 
   "gutter": {
@@ -85,12 +85,12 @@
     "folds": false,
     "line_numbers": false,
     "runnables": false,
-    "min_line_number_digits": 2
+    "min_line_number_digits": 2,
   },
 
   "scrollbar": {
     "show": "never",
-    "git_diff": false
+    "git_diff": false,
   },
 
   "buffer_line_height": "standard",
@@ -109,21 +109,21 @@
     "activate_on_close": "history",
     "file_icons": true,
     "show_diagnostics": "all",
-    "git_status": true
+    "git_status": true,
   },
 
   "status_bar": {
-    "active_language_button": true
+    "active_language_button": true,
   },
 
   "tab_bar": {
     "show": true,
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show_tab_bar_buttons": false,
   },
 
   "title_bar": {
-    "show_user_picture": false
+    "show_user_picture": false,
   },
 
   "auto_update": true,
@@ -131,7 +131,7 @@
   "toolbar": {
     "agent_review": false,
     "quick_actions": false,
-    "breadcrumbs": false
+    "breadcrumbs": false,
   },
 
   // region: bar
@@ -139,11 +139,11 @@
   // region: panel
 
   "global_lsp_settings": {
-    "button": true
+    "button": true,
   },
 
   "search": {
-    "button": false
+    "button": false,
   },
 
   "terminal": {
@@ -151,48 +151,51 @@
     "default_width": 640,
     "line_height": "standard",
     "copy_on_select": true,
-    "dock": "right"
+    "dock": "right",
+    "shell": {
+      "program": "/opt/homebrew/bin/nu",
+    },
     // "font_size": 18
   },
 
   "collaboration_panel": {
     "dock": "right",
-    "button": false
+    "button": false,
   },
 
   "notification_panel": {
-    "button": false
+    "button": false,
   },
 
   "agent": {
     "default_model": {
       "provider": "openai",
-      "model": "gpt-5"
+      "model": "gpt-5",
     },
-    "button": false
+    "button": false,
   },
 
   "debugger": {
-    "button": false
+    "button": false,
   },
 
   "git_panel": {
     "button": false,
     "default_width": 400,
-    "dock": "right"
+    "dock": "right",
   },
 
   "outline_panel": {
     "button": false,
     "default_width": 400,
-    "dock": "right"
+    "dock": "right",
   },
 
   "project_panel": {
     "button": false,
     "indent_size": 30,
     "scrollbar": {
-      "show": "always"
+      "show": "always",
     },
     "hide_root": true,
     "default_width": 400,
@@ -201,8 +204,8 @@
     "auto_fold_dirs": false,
     "dock": "right",
     "indent_guides": {
-      "show": "never"
-    }
+      "show": "never",
+    },
   },
 
   // endregion: panel
@@ -213,66 +216,66 @@
 
   "languages": {
     "Python": {
-      "language_servers": ["pyrefly", "ruff", "!pyright", "!pylsp"]
+      "language_servers": ["pyrefly", "ruff", "!pyright", "!pylsp"],
     },
 
     "YAML": {
-      "tab_size": 2
+      "tab_size": 2,
     },
 
     "HTML": {
-      "tab_size": 2
+      "tab_size": 2,
     },
 
     "CSS": {
-      "tab_size": 2
+      "tab_size": 2,
     },
 
     "JavaScript": {
-      "tab_size": 2
+      "tab_size": 2,
     },
 
     "TypeScript": {
       "formatter": "prettier",
-      "tab_size": 4
+      "tab_size": 4,
     },
 
     "TSX": {
-      "tab_size": 2
+      "tab_size": 2,
     },
 
     "JSONC": {
       "format_on_save": "on",
       "formatter": "prettier",
-      "tab_size": 2
+      "tab_size": 2,
     },
 
     "JSON": {
       "format_on_save": "on",
       "formatter": "prettier",
-      "tab_size": 2
+      "tab_size": 2,
     },
 
     "SQL": {
       "formatter": {
         "external": {
-          "command": "pg_format"
-        }
-      }
+          "command": "pg_format",
+        },
+      },
     },
 
     "Markdown": {
       "format_on_save": "on",
-      "formatter": "prettier"
+      "formatter": "prettier",
     },
 
     "Lua": {
       "formatter": {
         "external": {
           "command": "stylua",
-          "arguments": ["-"]
-        }
-      }
+          "arguments": ["-"],
+        },
+      },
     },
 
     "Luau": {
@@ -280,23 +283,30 @@
       "formatter": {
         "external": {
           "command": "stylua",
-          "arguments": ["-"]
-        }
-      }
+          "arguments": ["-"],
+        },
+      },
     },
 
     "C": {
-      "enable_language_server": false
-    }
+      "enable_language_server": false,
+    },
   },
 
   "lsp": {
+    "nu": {
+      "binary": {
+        "path": "nu",
+        "arguments": ["--lsp"],
+      },
+    },
+
     "luau-lsp": {
       "settings": {
         "roblox": {
           "enabled": true,
           "download_api_documentation": true,
-          "download_definitions": true
+          "download_definitions": true,
         },
         "luau-lsp": {
           "completion": {
@@ -304,25 +314,25 @@
               "enabled": true,
               "suggestRequires": true,
               "suggestServices": true,
-              "requireStyle": "AlwaysRelative"
-            }
-          }
-        }
-      }
+              "requireStyle": "AlwaysRelative",
+            },
+          },
+        },
+      },
     },
 
     "lua-language-server": {
       "settings": {
         "Lua": {
           "diagnostics": {
-            "globals": ["vim"]
+            "globals": ["vim"],
           },
           "workspace": {
             "library": ["/opt/homebrew/share/nvim/runtime/lua"],
-            "checkThirdParty": false
-          }
-        }
-      }
+            "checkThirdParty": false,
+          },
+        },
+      },
     },
 
     "json-language-server": {
@@ -331,11 +341,11 @@
           "schemas": [
             {
               "fileMatch": ["*.project.json"],
-              "url": "https://raw.githubusercontent.com/rojo-rbx/vscode-rojo/refs/heads/master/schemas/project.template.schema.json"
-            }
-          ]
-        }
-      }
+              "url": "https://raw.githubusercontent.com/rojo-rbx/vscode-rojo/refs/heads/master/schemas/project.template.schema.json",
+            },
+          ],
+        },
+      },
     },
 
     "tailwindcss-language-server": {
@@ -345,20 +355,22 @@
           "classRegex": [
             ["className:\\s*\"([^\"]*)\""],
             ["className:\\s*'([^']*)'"],
-            ["className =\\s*'([^']*)'"]
+            ["className =\\s*'([^']*)'"],
+            ["\\.style\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"],
+            // ["/\\*\\s*tw\\s*\\*/\\s*`([\\s\\S]*?)`/", "([\\w-/:]+)"]
             //     ["Classes \\=([^;]*);", "'([^']*)'"],
             //     ["Classes \\=([^;]*);", "\"([^\"]*)\""],
             //     ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"]
-          ]
-        }
-      }
-    }
+          ],
+        },
+      },
+    },
   },
 
   // endregion: languages
 
   "telemetry": {
     "metrics": false,
-    "diagnostics": false
-  }
+    "diagnostics": false,
+  },
 }

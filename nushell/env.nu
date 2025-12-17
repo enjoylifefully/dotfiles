@@ -1,9 +1,11 @@
 # path
 $env.PATH = ($env.PATH | prepend "/opt/homebrew/bin")
 
-# welcome message
+# init
 $env.config.show_banner = false
+$env.config.edit_mode = "vi"
 
+# scripts
 const scripts = {
   starship: ($nu.data-dir | path join scripts starship.nu)
   carapace: ($nu.data-dir | path join scripts carapace.nu)

@@ -87,3 +87,44 @@ cd Applications/
 ls
 git add .
 zed ../.gitignore 
+git add .
+git commit -m "adicionando o nushell"
+ijfeifjijk
+<\n>oi
+jiij
+iiji
+jkjk
+ls
+vim
+jkjkkjkjk  aaaaaaaoo
+i
+iofiwjoef
+oi
+> keybindings list --modifiers
+keybindings list
+oi
+ijfiaef
+i
+oiwfjeoif
+oi
+vim ~/.config/ghostty/
+shift-entershift-entershift-enter\x0a\
+oi
+jk
+ijijife
+ifjeifjef
+iejfiejf 
+fiejfie|<\n>
+o
+keybindings list -e
+keybindings list --help
+keybindings list -d
+oijoi<\n>iejfiaefjo<\n><\n><\n><\n>
+ls
+clear
+git add .
+z ..
+ls
+gitls
+ls
+zed .gitignore

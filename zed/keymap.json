@@ -9,8 +9,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle"
-    }
+      "shift shift": "file_finder::Toggle",
+    },
   },
   {
     // "context": "(!(vim_mode==insert && vim_operator==none))",
@@ -20,31 +20,31 @@
       "cmd-b": "outline_panel::ToggleFocus",
       "cmd-g": "git_panel::ToggleFocus",
       // "cmd-r": "workspace::ToggleBottomDock"
-      "cmd-r": "workspace::ToggleRightDock"
-    }
+      "cmd-r": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
       "cmd-t": "workspace::NewTerminal",
-      "cmd-l": "pane::ActivateNextItem"
-    }
+      "cmd-l": "pane::ActivateNextItem",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
       // "shift-enter": ["workspace::SendKeystrokes", "escape"],
-      "shift-space": "editor::ShowCompletions"
-    }
+      "shift-space": "editor::ShowCompletions",
+    },
   },
   {
     "bindings": {
-      "cmd-<": "zed::OpenSettings"
-    }
+      "cmd-<": "zed::OpenSettings",
+    },
   },
   {
     "bindings": {
-      "cmd-,": "zed::OpenSettingsFile"
-    }
-  }
+      "cmd-,": "zed::OpenSettingsFile",
+    },
+  },
 ]

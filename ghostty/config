@@ -3,11 +3,11 @@
 # font-family = ZedMono Nerd Font Mono
 # font-family = Monaspace Neon Light 
 #font-family = JetBrainsMono
-font-family = .ZedMono
+font-family = Lilex
 
 font-size = 22
 # font-feature = -calt, -liga, -dlig
-font-feature =  calt, liga, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09
+# font-feature =  calt, liga, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09
 
 background = #181818
 #background = #000000
@@ -23,3 +23,7 @@ keybind = global:cmd+enter=new_window
 #background-image-opacity = 0.5    # Define a opacidade (0.0 a 1.0)
 #background-image-align = center   # Alinhamento: center, top, bottom, left, right, etc.
 #background-image-fit = fill       # Modo: fill, fit, stretch, tile
+
+command = /opt/homebrew/bin/nu 
+
+keybind = shift+enter=text:\x1b\r
