@@ -1,21 +1,21 @@
 # "$schema" = "https://starship.rs/config-schema.json"
 
-format = "$directory $git_branch $git_status $character"
+format = "$directory$git_branch$git_status$character"
 add_newline = false
 
 [directory]
-format = "[$path]($style)"
+format = "[$path]($style) "
 style = "blue"
 use_logical_path = true
 # truncate_to_repo = true
 # truncation_length = 0
 
 [git_branch]
-format = "[$branch]($style)"
+format = "[$branch]($style) "
 style = "green"
 
 [git_status]
-format = "[$all_status$ahead_behind]($style)"
+format = "[$all_status$ahead_behind]($style) "
 conflicted = "="
 ahead = "^"
 behind = "v"
@@ -28,6 +28,7 @@ staged = "+"
 renamed = ">"
 deleted = "x"
 typechanged = ""
+style = "red"
 
 [character]
 disabled = true

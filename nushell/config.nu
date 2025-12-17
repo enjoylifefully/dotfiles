@@ -1,5 +1,7 @@
 alias vim = nvim
 
+$env.config.table.mode = "none"
+
 $env.config.keybindings ++= [{
     name: vi_shiftenter
     modifier: shift
