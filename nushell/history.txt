@@ -136,3 +136,15 @@ git add .
 git commit -m "apenas atualizando"
 git push
 ls
+git add .
+git commit -m "git ignore do nushell"
+git push
+git diff
+git diff --cached
+git add .
+git diff --cached
+ls
+zed .config
+git add .
+cd ..
+gti add .
