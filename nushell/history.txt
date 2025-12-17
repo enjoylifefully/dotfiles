@@ -1,0 +1,89 @@
+nu --config ~/.config/nushell/config.nu
+vim ~/.zprofile
+exit
+$nu.confi-path
+$nu.config-path
+vim ~/.bash_profile
+$nu.config-path
+vim ~/zshrc
+vim ~/.zshrc
+vim ~/.zprofile
+$nu.config-path
+$env.XDG_DATA_DIRS
+nu --config ~/.config/nushell/config.nu
+exitonfig/nushell/config.nu
+exit
+ls
+vim ~/.config/ghostty/
+zsh
+mv $nu.default-config-dir ~/.config
+$nu.default-config-dir
+rm -rf ~/.config/nushell/
+ls
+vim config.nu
+zed .
+ls
+brew 
+brew install carapace<\n>
+brew install carapace
+carapace --help
+vim env.nu
+carapace help
+$nu.cache-dir
+ls $nu.cache-dir
+mkdir $nu.cache-dir
+ls $nu.cache-dir
+touch "($nu.cache-dir)/carapace.nu"
+touch $"($nu.cache-dir)/carapace.nu"
+cargo run
+vim .
+vim
+nvim
+vim
+zed ~/.config/nvim
+vim
+git status 
+vim ~/.config/ghostty/
+brew install --cask font-lilex
+ls
+vim ~/.config/ghostty/
+ls
+$env.PROMPT_COMMAND
+git branch
+brew install starship
+ls
+cd ..
+starship prompt --help 
+ls
+starship init nu
+ls $nu.cache-dir
+ls $nu.cache-dir | path join starship.nu
+ls ($nu.cache-dir | path join starship.nu)
+cat ($nu.cache-dir | path join starship.nu)
+$nu.data-dir
+ls
+zed ~/.config/starship.toml
+oi
+print oi
+oi
+ls
+z config
+z astral
+ls
+z backend
+ls
+zed ../starship.toml 
+ls
+cd /
+ls
+cd /
+ls
+cd dev
+ls
+cd /
+ls
+cd ~ 
+cd Applications/
+ls
+git add .
+zed ../.gitignore 
