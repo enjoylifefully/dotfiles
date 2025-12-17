@@ -132,3 +132,7 @@ git add .
 git commit -m "apenas atualizando"
 git push
 ls
+git add .
+git commit -m "apenas atualizando"
+git push
+ls
